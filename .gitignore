@@ -1,0 +1,54 @@
+# Build directories
+build/
+bin/
+out/
+Debug/
+Release/
+cmake-build-debug/
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+
+# Debug files
+*.pdb
+*.ilk
+*.stackdump
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# IDE and editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.VC.db
+*.VC.opendb
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Other
+*.class
+*.jar
