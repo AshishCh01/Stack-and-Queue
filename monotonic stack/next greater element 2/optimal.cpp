@@ -3,7 +3,7 @@ using namespace std;
 
 vector<int> nextGreaterElements(vector<int>& nums) {
     int n = nums.size();
-    vector<int> ans(n, -1);
+    vector<int> ans(n);
     stack<int> st;
 
     // Traverse the array twice from right to left
@@ -17,7 +17,14 @@ vector<int> nextGreaterElements(vector<int>& nums) {
 
         // Store answer only during the second traversal
         if (i < n) {
-            if (!st.empty()) {
+            // OR
+            // if (!st.empty()) {
+            //     ans[index] = st.top();
+            // }
+            if (st.empty()) {
+                ans[index] = -1;
+            }
+            else {
                 ans[index] = st.top();
             }
         }
